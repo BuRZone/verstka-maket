@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +8,106 @@
     <link rel="stylesheet" href="css/style.css">
     <title>CPS-сервис по ремонту техники Dell</title>
 </head>
+
 <body>
-<header class="header">
-    <div class="header__container">
-        <div class="header__left">
-            <button class="header__burger" type="button" aria-label="Открыть меню" aria-controls="header-menu">
-                <img src="img/burger.svg" alt="Меню">
-            </button>
-            <a class="header__logo" href="#" aria-label="Логотип CPS">
-                <img src="img/Group.svg" alt="CPS logo">
-            </a>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__left">
+                <button type="button" class="header__burger" type="button" aria-label="Открыть меню"
+                    aria-controls="header-menu">
+                    <img src="img/burger.svg" alt="Меню">
+                </button>
+                <div class="header__left--divider"></div>
+                <a class="header__logo" href="#" aria-label="Логотип CPS">
+                    <img src="img/Group.svg" alt="CPS logo">
+                </a>
+            </div>
+            <div class="header__divider"></div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--desktop">
+                        <button type="button" class="header__nav-btn header__nav-btn--cal" aria-label="Позвонить">
+                            <img src="img/call.svg" alt="Позвонить">
+                        </button>
+                    </li>
+                    <li class="header__nav-item header__nav-item--desktop">
+                        <button type="button" class="header__nav-btn header__nav-btn--chat" aria-label="Чат">
+                            <img src="img/chat.svg" alt="Чат">
+                        </button>
+                    </li>
+                    <li class="header__nav-item header__nav-item--desktop">
+                        <button type="button" class="header__nav-btn header__nav-btn--profile" aria-label="Профиль">
+                            <img src="img/profile.svg" alt="Профиль">
+                        </button>
+                    </li>
+                    <li class="header__nav-divider header__nav-item--desktop"></li>
+                    <li class="header__nav-item">
+                        <button type="button" class="header__nav-btn header__nav-btn--repair" aria-label="Оставить заявку">
+                            <p>Оставить заявку</p>
+                            <img src="img/repair.svg" alt="Оставить заявку">
+                        </button>
+                    </li>
+                    <li class="header__nav-item">
+                        <button type="button" class="header__nav-btn header__nav-btn--status" aria-label="Статус ремонта">
+                            <p>Статус ремонта</p>
+                            <img src="img/checkstatus.svg" alt="Статус ремонта">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <button class="header__nav-btn header__nav-btn--call header__nav-item--desktop" aria-label="Позвонить">
-                        <img src="img/call.svg" alt="Позвонить">
-                    </button>
-                </li>
-                <li class="header__nav-item">
-                    <button class="header__nav-btn header__nav-btn--chat header__nav-item--desktop" aria-label="Чат">
-                        <img src="img/chat.svg" alt="Чат">
-                    </button>
-                </li>
-                <li class="header__nav-item header__nav-item--desktop">
-                    <button class="header__nav-btn header__nav-btn--profile" aria-label="Профиль">
-                        <img src="img/profile.svg" alt="Профиль">
-                    </button>
-                </li>
-                <li class="header__nav-item">
-                    <button class="header__nav-btn header__nav-btn--repair" aria-label="Ремонт">
-                        <img src="img/repair.svg" alt="Ремонт">
-                    </button>
-                </li>
-                <li class="header__nav-item">
-                    <button class="header__nav-btn header__nav-btn--status" aria-label="Статус заказа">
-                        <img src="img/checkstatus.svg" alt="Статус заказа">
-                    </button>
-                </li>
+    </header>
+    <div class="srange-nav-wrapper" >
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <ul class="srange-nav-wrapper-list">
+            <li class="srange-nav-wrapper-item">
+                <button type="button" class="header__nav-btn srange-nav-wrapper-list--repair" aria-label="Оставить заявку">
+                    <p>Оставить заявку</p>
+                    <img src="img/repair.svg" alt="Оставить заявку">
+                </button>
+            </li>
+            <li class="srange-nav-wrapper-item">
+                <button type="button" class="header__nav-btn srange-nav-wrapper-list--status" aria-label="Статус ремонта">
+                    <p>Статус ремонта</p>
+                    <img src="img/checkstatus.svg" alt="Статус ремонта">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="header-menu__wrapper">
+        <nav class="header-menu" id="header-menu">
+            <ul class="header-menu__list">
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Ремонтируемые бренды</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Ремонтируемые устройства</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Цены на услуги</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Адреса сервисных центров</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Специальные цены</a></li>
             </ul>
         </nav>
     </div>
-</header>
-<nav class="header-menu" id="header-menu" aria-hidden="true">
-    <ul class="header-menu__list">
-        <li class="header-menu__item"><a href="#" class="header-menu__link">Ремонтируемые бренды</a></li>
-        <li class="header-menu__item"><a href="#" class="header-menu__link">Ремонтируемые устройства</a></li>
-        <li class="header-menu__item"><a href="#" class="header-menu__link">Цены на услуги</a></li>
-        <li class="header-menu__item"><a href="#" class="header-menu__link">Адреса сервисных центров</a></li>
-        <li class="header-menu__item"><a href="#" class="header-menu__link">Специальные цены</a></li>
-    </ul>
-</nav>
-<main class="main">
-    <div class="main__container">
-        <section class="main__content">
-            <h1 class="main__title">Услуги и сервисы</h1>
-            <p class="main__text main__text--primary">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p class="main__text main__text--secondary">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-            <button class="main__readmore" type="button">
-                <span class="main__readmore-chevron">
-                   <img src="img/expand.svg" alt="Ремонт">
-                </span>
-                <span class="main__readmore-text">Читать далее</span>
-            </button>
-        </section>
-        <div class="main__image-wrapper">
-            <img class="main__image" src="img/IMG_3223.png" alt="Ремонт техники Dell">
+    <main class="main">
+        <div class="main__reviews">Отзывы</div>
+        <div class="main__container">
+            <section class="main__content">
+
+                <p class="main__text main__text--primary">Мы являемся авторизованным сервисным центром по ремонту
+                    техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                    производителя.</p>
+                <p class="main__text main__text--secondary">Мы успешно работаем с 1992 года и заслужили репутацию
+                    надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к
+                    нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                <button type="button" class="main__readmore" type="button">
+                    <span class="main__readmore-chevron">
+                        <img src="img/expand.svg" alt="Ремонт">
+                    </span>
+                    <span class="main__readmore-text">Читать далее</span>
+                </button>
+            </section>
+            <div class="main__image-wrapper">
+                <img class="main__image" src="img/IMG_3223.png" alt="Ремонт техники Dell">
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
+
 </html>
-<script src="js/main.js"></script>
